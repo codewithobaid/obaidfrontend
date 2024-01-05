@@ -1,0 +1,329 @@
+@media only screen and (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 5rem;
+  }
+  .hero-content h2 {
+    font-size: 3rem;
+  }
+  .skills {
+    height: 76vh;
+  }
+
+  .leftcard__content p {
+    font-size: 2.5rem;
+    line-height: 3.4rem;
+  }
+
+  #page2 {
+    padding-inline: 20px;
+  }
+
+  .page2-content {
+    gap: 4rem;
+  }
+
+  .project1 {
+    left: 5%;
+  }
+
+  .project2,
+  .project4 {
+    left: 37%;
+  }
+
+  .right {
+    left: 24%;
+    margin: 5rem 0;
+  }
+
+  .process-header h1 {
+    font-size: 6rem;
+  }
+  #footer {
+    padding: 8rem 2rem;
+  }
+  .email-lists h3,
+  .contact-lists h3,
+  .follow-lists h3 {
+    font-size: 3rem;
+  }
+
+  .leftcontact h1 {
+    font-size: 6rem;
+  }
+
+  .leftcontact h3 {
+    font-size: 2.2rem;
+  }
+
+  .leftcontact p {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  /* .🤚 {
+    left: 13%;
+  } */
+}
+
+@media only screen and (min-width: 768px) {
+  .responsive-footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #follower {
+    display: none;
+  }
+
+  .social-ic {
+    display: none;
+  }
+
+  .page2-content {
+    flex-direction: column;
+  }
+
+  .leftcard {
+    margin-bottom: 5rem;
+  }
+
+  .projectimages img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .project2,
+  .project4 {
+    left: 28%;
+  }
+
+  .card-process {
+    width: 500px;
+  }
+
+  .right {
+    left: 15%;
+  }
+
+  .process-header h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .processcard__content h1 {
+    font-size: 3rem;
+  }
+
+  .processcard__content h3 {
+    font-size: 2.5rem;
+  }
+
+  .email h1,
+  .contact h1,
+  .follow h1 {
+    font-size: 5rem;
+  }
+
+  .email-lists h3,
+  .contact-lists h3,
+  .follow-lists h3 {
+    font-size: 2.2rem;
+  }
+
+  .copyright-content h1 {
+    font-size: 2rem;
+  }
+  .responsive-footer {
+    display: none;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .leftcontact h3 {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .hero-content h1 {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content h3 {
+    left: 0%;
+  }
+  .logo {
+    display: none;
+  }
+  .nav-menu {
+    padding-top: 2rem;
+  }
+
+  .animated-button svg {
+    z-index: 0;
+  }
+
+  .leftcard {
+    width: 400px;
+  }
+
+  .project-header h1 {
+    font-size: 7rem;
+  }
+
+  .projectimages img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5 {
+    left: 0;
+  }
+
+  .process-header h1 {
+    font-size: 3rem;
+  }
+  .card-process {
+    width: 320px;
+  }
+
+  .right {
+    left: 0;
+  }
+  .processcard__content h1 {
+    font-size: 2.2rem;
+  }
+  .processcard__content h3 {
+    font-size: 2rem;
+  }
+
+  .scroller h4 {
+    font-size: 4rem;
+  }
+
+  .footer-header {
+    display: none;
+  }
+
+  .footer-list {
+    display: none;
+  }
+  .responsive-footer {
+    display: block;
+  }
+
+  .copyright-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .leftcontact h1 {
+    font-size: 4rem;
+  }
+
+  .leftcontact h3 {
+    font-size: 2rem;
+    padding-inline: 1rem;
+  }
+
+  .leftcontact p {
+    font-size: 2rem;
+    padding-inline: 1rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .leftcard {
+    width: 361px;
+  }
+
+  .leftcard__content p {
+    font-size: 2.2rem;
+  }
+  .projectimages img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .processcard__content {
+    gap: 1rem;
+  }
+
+  .card-process {
+    width: 270px;
+  }
+  .processcard__content h1 {
+    font-size: 1.9rem;
+  }
+  .processcard__content h3 {
+    font-size: 1.8rem;
+  }
+
+  .copyright-content h1 {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .hero-content h1 {
+    font-size: 3.8rem;
+  }
+  .hero-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content h3 {
+    font-size: 2rem;
+  }
+
+  .sidenav {
+    width: 320px;
+  }
+
+  [role="progressbar"] {
+    --size: 50px;
+  }
+
+  .line {
+    left: 0%;
+    width: 316px;
+  }
+
+  .leftcard {
+    width: 305px;
+  }
+  .leftcard__content p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .project-header h1 {
+    font-size: 6rem;
+  }
+
+  .projectimages img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .card-process {
+    width: 213px;
+  }
+
+  .processcard__content h3 {
+    line-height: 1.5rem;
+  }
+}

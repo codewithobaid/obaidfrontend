@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Profile Searcher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bgimage">
+      <div class="container">
+        <h1>Search your Github Profile</h1>
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="Enter Your Github Username"
+            name="InputSearch"
+            id="InputSearch"
+          />
+          <button id="searchbtn" class="cssbuttons-io">
+            <span
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  fill="currentColor"
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                ></path>
+              </svg>
+              Search</span
+            >
+          </button>
+        </div>
+
+        <div id="loading"></div>
+      </div>
+      <div id="profileContainer"></div>
+    </div>
+    <div class="footer">
+      <footer>Copyright © 2023 Made by Obaid. All rights reserved.</footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

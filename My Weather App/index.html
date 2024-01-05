@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyCraze</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-video">
+      <video src="./Assets/bg.mp4" autoplay loop muted></video>
+      <div class="glass-overlay"></div>
+      <div class="hero-content">
+        <div class="card-ctn">
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="responsive-menu">
+            <div class="flx-menu">
+              <div class="favourite-location">
+                <i class="bx bxs-star"></i>
+                <h3>Favourite Location</h3>
+                <i class="bx bx-info-circle"></i>
+              </div>
+              <div class="primary-city">
+                <h2>Los Angeles District</h2>
+              </div>
+              <div class="line"></div>
+              <div class="other-location">
+                <i class="bx bx-current-location"></i>
+                <h3>Other Locations</h3>
+              </div>
+              <div class="cities">
+                <h2>Las Vegas</h2>
+                <h2>Singapore</h2>
+                <h2>Canada</h2>
+              </div>
+            </div>
+          </div>
+          <div class="search-bar">
+            <input type="text" id="city-input" placeholder="Enter city name" />
+            <button id="search-btn" class="button">Search</button>
+          </div>
+
+          <div class="weathercontainer">
+            <div class="weather-content flx">
+              <div class="city-name">
+                <h2 class="city">Los Angeles,</h2>
+                <h2 class="country">USA</h2>
+              </div>
+              <div class="weather-image">
+                <img src="./Assets/weather icons/sunny.png" alt="" />
+              </div>
+              <div class="temprature">
+                <h2>20 <span>&deg;C</span></h2>
+              </div>
+              <div class="weather-names">
+                <h2>Sunny</h2>
+              </div>
+            </div>
+          </div>
+          <div class="uv-index-items">
+            <div class="wind">
+              <i class="bx bx-wind"></i>
+              <h3>11km/hr</h3>
+            </div>
+            <div class="humidity">
+              <i class="bx bx-droplet"></i>
+              <h3>10%</h3>
+            </div>
+            <!-- <div class="uv-index">
+              <i class="bx bx-sun"></i>
+              <h3>High</h3>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <footer><p>&copy; 2023 Made by Obaid. All Rights Reserved.</p></footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

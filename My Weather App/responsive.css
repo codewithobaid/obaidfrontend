@@ -1,0 +1,68 @@
+@media only screen and (max-width: 1024px) {
+  .search-bar {
+    left: 28%;
+  }
+  .weathercontainer {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-bar {
+    left: 22%;
+    top: -4%;
+  }
+  .flx-menu {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .weathercontainer {
+    margin-top: 80px;
+  }
+
+  input {
+    max-width: 160px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .card-ctn {
+    width: 90vw;
+  }
+  .button {
+    padding: 0.3em 0.8em;
+  }
+
+  .search-bar {
+    left: 16%;
+  }
+  .flx-menu {
+    width: 382px;
+  }
+  .footer p {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card-ctn {
+    width: 95vw;
+  }
+
+  .flx-menu {
+    width: 356px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .search-bar {
+    left: 1%;
+    top: 7%;
+  }
+  .weathercontainer {
+    margin-top: 130px;
+  }
+  .flx-menu {
+    width: 306px;
+  }
+}

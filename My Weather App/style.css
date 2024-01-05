@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.bg-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.glass-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+  opacity: 3.8; /* Adjust the opacity to control the intensity of the glass effect */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.card-ctn {
+  background-color: #2b2b2bb9;
+  width: 60vw;
+  height: 800px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 19px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 2px 19px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 19px 2px rgba(0, 0, 0, 0.75);
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 15px;
+  padding-top: 5px;
+  position: relative;
+  top: 1%;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 99;
+}
+
+.cross {
+  transform: rotate(45deg);
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+  opacity: 0;
+  transform: translateX(100%) rotate(45deg); /* Adjust the transform to maintain consistent length */
+}
+
+.hamburger-menu.open .bar:first-child {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger-menu.open .bar:last-child {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.flx-menu {
+  background-color: rgba(0, 0, 0, 0.719);
+  width: 400px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: -400px; /* Initially hide the menu off-screen */
+  transition: left 0.8s ease-in-out; /* Add transition for smooth animation */
+  z-index: 1;
+}
+.show {
+  left: 0;
+  transition: left 0.3s ease-in-out;
+}
+.hidden {
+  display: none;
+}
+
+.bx {
+  font-size: 2.5rem;
+}
+
+.bx-info-circle {
+  cursor: pointer;
+}
+
+.favourite-location {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.line {
+  width: 210px;
+  height: 1px;
+  background-color: grey;
+}
+
+.favourite-location h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.primary-city h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.other-location {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.other-location h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.cities {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cities h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.search-bar {
+  position: relative;
+  left: 35%;
+  top: -3%;
+}
+
+input {
+  min-height: 50px;
+  max-width: 150px;
+  padding: 0 1rem;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #5e4dcd;
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+}
+
+.button {
+  min-height: 50px;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: #5e4dcd;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #5e5dcd;
+}
+
+input:focus,
+input:focus-visible {
+  border-color: #3898ec;
+  outline: none;
+}
+
+.weather-image img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.flx {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.city-name {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.city-name h2 {
+  font-size: 2rem;
+}
+
+.country {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.temprature h2 {
+  font-size: 3rem;
+}
+
+.temprature span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.weather-names {
+  margin-top: -15px;
+}
+
+.uv-index-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.wind,
+.humidity,
+.uv-index {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wind h3,
+.humidity h3,
+.uv-index h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.footer {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    245deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(5, 4, 0, 1) 32%,
+    rgba(146, 5, 234, 1) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.footer p {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+}
